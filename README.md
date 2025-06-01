@@ -20,21 +20,21 @@ Here are some glimpses of the Recipe Manager in action:
 
 ### Recipe List View
 
-![Recipe List View](Recipemanager/frontend/public/1.png)
+![Recipe List View](images/recipe-list.png)
 _Easily browse through your stored recipes, with quick access to details and editing options._
 
 ---
 
 ### Add New Recipe Form
 
-![Add New Recipe Form](public/2.png)
+![Add New Recipe Form](images/add-recipe.png)
 _A simple and guided form to add new culinary creations, including ingredients, instructions, and an image upload._
 
 ---
 
 ### Recipe Detail View
 
-![Recipe Detail View](public/3.png)
+![Recipe Detail View](images/recipe-detail.png)
 _View all the details of a specific recipe, including ingredients, step-by-step instructions, and a larger image._
 
 ---

@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 
 // Constants
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://recipemanager-ma43.onrender.com";
 const DEFAULT_RECIPE_IMAGE = "/default-recipe.jpg";
 
 // Utility function for error handling

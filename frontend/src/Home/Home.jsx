@@ -15,7 +15,7 @@ export const Home = () => {
     const fetchData = async () => {
       try {
         setIsLoading(true);
-        const response = await axios.get("http://localhost:3000/recipes");
+        const response = await axios.get("https://recipemanager-ma43.onrender.com/recipes");
         setData(response.data.data || response.data);
       } catch (error) {
         console.error("Error fetching recipes:", error);
@@ -34,7 +34,7 @@ export const Home = () => {
         const token = localStorage.getItem("token");
         if (!token) return;
 
-        const response = await axios.get("http://localhost:3000/favorites", {
+        const response = await axios.get("https://recipemanager-ma43.onrender.com/favorites", {
           headers: { Authorization: `Bearer ${token}` }
         });
 
@@ -59,7 +59,7 @@ export const Home = () => {
       }
 
       const response = await axios.post(
-        "http://localhost:3000/favorites/toggle", 
+        "https://recipemanager-ma43.onrender.com/favorites/toggle", 
         { recipeId }, 
         { headers: { Authorization: `Bearer ${token}` } }
       );

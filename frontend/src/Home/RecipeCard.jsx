@@ -14,7 +14,7 @@ function RecipeCard() {
     const fetchRecipe = async () => {
       try {
         setLoading(true);
-        const { data } = await axios.get(`http://localhost:3000/recipes/${id}`);
+        const { data } = await axios.get(`https://recipemanager-ma43.onrender.com/recipes/${id}`);
         const recipeData = data.data || data;
         
         if (!recipeData) throw new Error("Recipe not found");
@@ -24,7 +24,7 @@ function RecipeCard() {
           image: recipeData.image?.includes('res.cloudinary.com') 
             ? recipeData.image 
             : recipeData.image 
-              ? `http://localhost:3000/${recipeData.image}`
+              ? `https://recipemanager-ma43.onrender.com/${recipeData.image}`
               : null
         });
       } catch (err) {

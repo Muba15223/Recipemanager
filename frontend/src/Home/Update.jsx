@@ -19,7 +19,7 @@ function Update() {
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/recipes/${id}`);
+        const response = await axios.get(`https://recipemanager-ma43.onrender.com/recipes/${id}`);
         const { name, ingredients, timeToCook, steps, image } = response.data;
         setFormData({
           name,
@@ -69,7 +69,7 @@ function Update() {
 
     try {
       const response = await axios.put(
-        `http://localhost:3000/recipes/${id}`,
+        `https://recipemanager-ma43.onrender.com/recipes/${id}`,
         formattedData,
         {
           headers: {

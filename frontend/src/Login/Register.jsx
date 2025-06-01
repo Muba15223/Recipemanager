@@ -59,7 +59,7 @@ function Register() {
     setIsLoading(true);
     
     try {
-      const response = await axios.post('http://localhost:3000/register', formdata);
+      const response = await axios.post('https://recipemanager-ma43.onrender.com/register', formdata);
       console.log("Response:", response.data);
       
       toast.success("Registration Successful!", {

@@ -7,13 +7,44 @@ A full-stack application designed to help you organize, store, and discover your
 * **Recipe Storage:** Easily add, edit, and delete your recipes.
 * **Search & Filter:** Quickly find recipes by name, ingredients, or categories.
 * **User-Friendly Interface:** An intuitive and responsive design for a seamless experience.
-* **Ingredient Management:** (Add if applicable, e.g., track ingredients, shopping lists)
+* **Ingredient Management:** Track ingredients and manage shopping lists (add if applicable).
 * **Deployment Ready:** Hosted on Render for easy access.
+
+---
+
+## Project Showcase
+
+Here are some glimpses of the Recipe Manager in action:
+
+---
+
+### Recipe List View
+
+![Recipe List View](public/1.png)
+_Easily browse through your stored recipes, with quick access to details and editing options._
+
+---
+
+### Add New Recipe Form
+
+![Add New Recipe Form](public/2.png)
+_A simple and guided form to add new culinary creations, including ingredients, instructions, and an image upload._
+
+---
+
+### Recipe Detail View
+
+![Recipe Detail View](public/3.png)
+_View all the details of a specific recipe, including ingredients, step-by-step instructions, and a larger image._
+
+---
 
 ## Live Demo
 
 You can access the live version of Recipe Manager here:
 **[https://recipemanager-frontend.onrender.com](https://recipemanager-frontend.onrender.com)**
+
+---
 
 ## 🛠️ Technologies Used
 
@@ -24,6 +55,8 @@ You can access the live version of Recipe Manager here:
 * **Image Upload:** Multer, Cloudinary
 * **Deployment:** Render
 
+---
+
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
@@ -32,37 +65,38 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 Make sure you have the following installed:
 
-* [Node.js](https://nodejs.org/) (if your frontend/backend uses it)
-* [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
-* [Specific backend runtime/framework dependencies, e.g., Python, Java JDK, etc.]
-* [Database setup if running locally, e.g., MongoDB, PostgreSQL]
+* [Node.js](https://nodejs.org/) (includes npm)
+* [MongoDB](https://www.mongodb.com/try/download/community) (for local database setup, or use a cloud-hosted MongoDB service like MongoDB Atlas)
 
 ### Installation
 
 1.  **Clone the repository:**
+
     ```bash
     git clone [https://github.com/Anwarsha7/Recipemanager.git](https://github.com/Anwarsha7/Recipemanager.git)
     cd Recipemanager
     ```
 
 2.  **Frontend Setup:**
-    Navigate to your frontend directory (e.g., `cd frontend` or `cd client` if it's in a subfolder) and install dependencies.
+    Navigate to the `frontend` directory and install dependencies.
+
     ```bash
-    # Example for React/Node.js frontend
-    cd frontend # Adjust this path if your frontend is in a different folder
-    npm install # or yarn install
+    cd frontend
+    npm install
     ```
 
 3.  **Backend Setup:**
-    Navigate to your backend directory (e.g., `cd backend` or `cd server` if it's in a subfolder) and install dependencies.
-    ```bash
-    # Example for Node.js backend
-    cd backend # Adjust this path if your backend is in a different folder
-    npm install # or yarn install
-    ```
-    Configure your environment variables (e.g., database connection strings, API keys) if necessary. You might need a `.env` file based on your backend setup.
+    Navigate to the `backend` directory and install dependencies.
 
-### Running Locally
+    ```bash
+    cd backend
+    npm install
+    ```
+    Create a `.env` file in the `backend` directory with your environment variables (e.g., `MONGO_URI`, `JWT_SECRET`, `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`). Refer to the backend's `config` or `example.env` file for required variables.
+
+---
+
+## Running Locally
 
 To run the application on your local machine, you'll need to start both the frontend and backend servers.
 
@@ -71,31 +105,39 @@ To run the application on your local machine, you'll need to start both the fron
 **Before trying to run the frontend locally, remember to change the API endpoint from `https://recipemanager-ma43.onrender.com` to `http://localhost:3000` (or whatever port your backend runs on locally, if different from 3000).** This change is typically made in your frontend's environment configuration file or a constant file (e.g., `.env`, `config.js`, `constants.js`).
 
 1.  **Start the Backend Server:**
-    Navigate to your backend directory and start the server.
+    Navigate to your `backend` directory and start the server.
+
     ```bash
-    cd backend # or wherever your backend is
-    npm start # or node server.js, python app.py, etc.
+    cd backend
+    npm start
     ```
-    Your backend should now be running, likely on `http://localhost:3000` (or another port specified in your backend configuration).
+    Your backend should now be running, likely on `http://localhost:3000`.
 
 2.  **Start the Frontend Server:**
-    Navigate to your frontend directory and start the development server.
+    Navigate to your `frontend` directory and start the development server.
+
     ```bash
-    cd frontend # or wherever your frontend is
-    npm start # or yarn start
+    cd frontend
+    npm run dev # Or npm start, depending on your Vite setup
     ```
-    This will usually open the application in your web browser at `http://localhost:3000` (or another port like 3001, depending on your frontend framework).
+    This will usually open the application in your web browser at `http://localhost:5173` (or another port like 3001, depending on your frontend framework).
+
+---
 
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
 
+---
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 
+---
+
 ## Contact
 
-Anwarsha - [ynetflix894@gmail.com/www.linkedin.com/in/anwarsha-k-s-b1a540231]
+Anwarsha - [ynetflix894@gmail.com](mailto:ynetflix894@gmail.com) | [www.linkedin.com/in/anwarsha-k-s-b1a540231](https://www.linkedin.com/in/anwarsha-k-s-b1a540231)
 
 Project Link: [https://github.com/Anwarsha7/Recipemanager](https://github.com/Anwarsha7/Recipemanager)

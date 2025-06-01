@@ -1,0 +1,32 @@
+/* src/styles.css */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.opacity-0 { opacity: 0; }
+.opacity-100 { opacity: 1; }
+
+.animate__delay-1s { animation-delay: 0.3s; }
+.animate__delay-2s { animation-delay: 0.6s; }
+.animate__delay-3s { animation-delay: 0.9s; }
+/* Recipe card hover effects */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}

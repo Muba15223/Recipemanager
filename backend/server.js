@@ -59,8 +59,7 @@ app.use((req, res, next) => {
 // Database Connection with retry logic
 const connectWithRetry = () => {
   mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+   
     serverSelectionTimeoutMS: 5000
   })
   .then(() => console.log('MongoDB connected successfully'))

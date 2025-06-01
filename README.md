@@ -20,7 +20,7 @@ Here are some glimpses of the Recipe Manager in action:
 
 ### Recipe List View
 
-![Recipe List View](public/1.png)
+![Recipe List View](Recipemanager/frontend/public/1.png)
 _Easily browse through your stored recipes, with quick access to details and editing options._
 
 ---

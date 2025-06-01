@@ -1,4 +1,8 @@
+ 
+
 /* src/styles.css */
+
+/* Hover and animation effects */
 .hover-scale {
   transition: transform 0.3s ease;
 }
@@ -21,12 +25,43 @@
 .animate__delay-1s { animation-delay: 0.3s; }
 .animate__delay-2s { animation-delay: 0.6s; }
 .animate__delay-3s { animation-delay: 0.9s; }
-/* Recipe card hover effects */
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+/* Recipe card styles */
+.card {
+  width: 100%;           /* Full width by default for mobile */
+  max-width: 400px;      /* Limit max width on larger screens */
+  margin: 1rem auto;     /* Center with margin above and below */
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover img {
-  transform: scale(1.05);
+/* Hover effects for desktop */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .card:hover img {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive image inside card */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+/* For larger screens, limit width to natural size */
+@media (min-width: 768px) {
+  .card {
+    width: auto;
+  }
 }
